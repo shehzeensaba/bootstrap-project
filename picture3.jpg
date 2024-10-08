@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://3-project-jewelone.netlify.app/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewel One</title>
+    <link href="./picture3_files/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./picture3_files/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./picture3_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./picture3_files/style.css">
+    <link rel="stylesheet" href="./picture3_files/media queries.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="navbar">
+            <div class="logo">
+                <h1>Jewel One</h1>
+            </div>
+            <div class="navigation">
+                <ul class="navlist">
+                    <li><a href="https://3-project-jewelone.netlify.app/" style="background-color: gray; color: white; padding: 5px; border-radius: 5px;">Home</a></li>
+                    <li><a href="https://3-project-jewelone.netlify.app/index-2">Earrings</a></li>
+                    <li><a href="https://3-project-jewelone.netlify.app/index-3">Neck-set</a></li>
+                    <li><a href="https://3-project-jewelone.netlify.app/*brand">Brands</a></li>
+                    <li><a href="https://3-project-jewelone.netlify.app/index-4">Sign in</a></li>
+                </ul>
+            </div>
+            <div class="hamburger-icon">
+                <label for="dropdown">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-x" id="x-bar"></i>
+                </label>
+                <input type="checkbox" id="dropdown">
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+    </header>
+    <section>
+        <div class="background_image">
+            <div class="background">
+                <h1>Classic Jewellery Collection</h1>
+                <p>Step into a world of luxury and elegance with our latest jewelry collection
+                </p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="threebox">
+            <div class="box-1">
+                <img src="./picture3_files/icon (2).jfif" alt="">
+                <h1>Gift Package</h1>
+                <p>We will choose the perfect gift box for your present</p>
+            </div>
+            <div class="box-1">
+                <img src="./picture3_files/icon (3).jfif" alt="">
+                <h1>Diamond Selection</h1>
+                <p>Our Conultant will help to choose your right size</p>
+            </div>
+            <div class="box-1">
+                <img src="./picture3_files/icon (4).jfif" alt="">
+                <h1>Design your Ring</h1>
+                <p>Individual growning to perpetuate the deepest feeling</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="boxes-2">
+            <div class="made-info">
+                <img src="./picture3_files/jewel image.jpg" alt="">
+                <div class="text-on-image">
+                    <h4>EXPLORE OUR MORE UNIQUE DESIGN</h4>
+                    <a>Know More</a>
+                </div>
+            </div>
+            <div class="made-info">
+                <img src="./picture3_files/jewel making image.jpg" alt="">
+                <div class="text-on-image-1">
+                    <h4>MOST CERTIFIED MAKING JEWELRY IN INDIA</h4>
+                    <a>Know More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="title-word">
+            <h1>EXPLORE OUR MORE PRODUCTS</h1>
+            <h4>With their design check and quality check</h4>
+        </div>
+        <div class="filter_image">
+            <div class="card">
+                <img src="./picture3_files/bangles.jpg" class="card-img" alt="">
+                <div class="card-body">
+                    <h1 class="title"> BANGLES</h1>
+                    <p class="card-info">Wrap your wrist in luxury with our selection of bracelets. From sleek bangles to charm-filled designs, these pieces add the perfect finishing touch to any outfit.
+                    </p>
+                    <button class="card-btn"> View More</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./picture3_files/banner (2).jpg" class="card-img" alt="">
+                <div class="card-body">
+                    <h1 class="title">Neck set</h1>
+                    <p class="card-info">Elevate your look with our stunning necklaces. Choose from a range of styles, including minimalist designs, vintage-inspired pieces, and bold statement pendants.                    </p>
+                    <button class="card-btn"> View More</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./picture3_files/banner (3).jpg" class="card-img" alt="">
+                <div class="card-body">
+                    <h1 class="title"> Earrings</h1>
+                    <p class="card-info">Our earrings are designed to dazzle. From delicate solitaires to intricate bands adorned with precious gemstones, each earring is a symbol of beauty and grace.
+                    </p>
+                    <button class="card-btn"> View More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="our-products">
+            <h4>Our best Selling</h4>
+            <h1>OUR POPULAR PRODUCTS</h1>
+        </div>
+        <div class="products_img">
+            <img src="./picture3_files/banner (1).jpg" alt="">
+            <img src="./picture3_files/products (1).jfif" alt="">
+            <div class="center"><img src="./picture3_files/products (2).jfif" alt=""></div>
+            <img src="./picture3_files/products (3).jfif" alt="">
+            <img src="./picture3_files/products (4).jfif" alt="">
+        </div>
+    </section>
+    <section>
+        <div class="parallax">
+
+        </div>
+    </section>
+    <section>
+        <div class="advertisement">
+            <div class="ad-img">
+                <img src="./picture3_files/ring.jfif" alt="">
+            </div>
+            <div class="ad-text">
+                <h1>Most unique Collections</h1>
+                <p>Every piece in our collection is crafted with the utmost attention to detail, using only the finest materials. We take pride in creating jewelry that is not only beautiful but also durable.</p>
+                <button>View More</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="brand-logo" id="brand">
+            <h1>Popular Brand </h1>
+            <div class="logo-brands">
+                <img src="./picture3_files/brand-logo (1).jfif" alt="">
+                <img src="./picture3_files/brand-logo (2).jfif" alt="">
+                <img src="./picture3_files/brand-logo (3).jfif" alt="">
+                <img src="./picture3_files/brand-logo (4).jfif" alt="">
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="online-text">
+            <h1>Buy Products Online</h1>
+        </div>
+        <div class="addtocart">
+            <div class="cart-1">
+                <img src="./picture3_files/cart-image (1).jfif" alt="">
+
+                <h4>Stunning natural Diamond Ring</h4>
+                <button>Buy Now</button> <span><i class="bx bxs-heart"></i></span>
+            </div>
+            <div class="cart-1">
+                <img src="./picture3_files/cart-image (2).jfif" alt="">
+                <h4>Stunning natural Diamond pendant</h4>
+                <button>Buy Now</button> <span><i class="bx bxs-heart"></i></span>
+            </div>
+            <div class="cart-1">
+                <img src="./picture3_files/download (4).jfif" alt="">
+                <h4>Stunning natural Diamond Stud</h4>
+                <button>Buy Now</button> <span><i class="bx bxs-heart"></i></span>
+            </div>
+            <div class="cart-1">
+                <img src="./picture3_files/cart-image (4).jfif" alt="">
+                <h4>Stunning natural Diamond Earring</h4>
+                <button>Buy Now</button> <span><i class="bx bxs-heart"></i></span>
+            </div>
+            <div class="cart-1">
+                <img src="./picture3_files/bracelet____.jfif" alt="">
+                <h4>Stunning natural Diamond Bracelet</h4>
+                <button>Buy Now</button> <span><i class="bx bxs-heart"></i></span>
+            </div>
+            <div class="wrapper">
+                <div class="icon facebook">
+                    <div class="tooltip">
+                        View More
+                    </div>
+                    <span> <i class="bx bxs-chevrons-right"></i></span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="flip-text">
+            <h1>Flip the card to View the Price</h1>
+        </div>
+        <div class="flip-cards-rate">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./picture3_files/bracelet____.jfif" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./picture3_files/bracelet____.jfif" alt="">
+                        <h3>Bracelet with size</h3>
+                        <h1>Rs. 249</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./picture3_files/banner (1).jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./picture3_files/banner (1).jpg" alt="">
+                        <h3>Bangles with size</h3>
+                        <h1>Rs. 350</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./picture3_files/flip.jfif" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./picture3_files/flip.jfif" alt="">
+                        <h3>Earrings with Varities</h3>
+                        <h1>Rs. 350</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./picture3_files/products (4).jfif" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./picture3_files/products (4).jfif" alt="">
+                        <h3>Pendant with Varities</h3>
+                        <h1>Rs. 550</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./picture3_files/Ring (1).jfif" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./picture3_files/Ring (1).jfif" alt="">
+                        <h3>Ring with Varities</h3>
+                        <h1>Rs. 150</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./picture3_files/neck-set.jfif" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./picture3_files/neck-set.jfif" alt="">
+                        <h3>Neckset with Varities</h3>
+                        <h1>Rs. 2550</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./picture3_files/download (7).jfif" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./picture3_files/download (7).jfif" alt="">
+                        <h3>Stud with Varities</h3>
+                        <h1>Rs. 250</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./picture3_files/pendant-set.jfif" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./picture3_files/pendant-set.jfif" alt="">
+                        <h3>Pendant set with Varities</h3>
+                        <h1>Rs. 250</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="video-content">
+            <div class="video-title">
+                <h1>20% Offer at Your First Order</h1>
+                <p>For a limited time, indulge in luxury at a fraction of the price! We're excited to offer 20% off our brand-new jewelry collection. Whether you're treating yourself or looking for the perfect gift, now is the perfect time to add a touch of elegance to your collection.
+                </p>
+            </div>
+            <video src="/images/video.mp4" controls="" autoplay="" muted="" width="550px" height="550px">
+                <source src="">
+            </video>
+        </div>
+    </section>
+    <section>
+
+        <div class="contact-info">
+            <div class="contact-icon">
+                <div class="Message">
+                    <i class="fa-solid fa-message"></i>
+                    <span id="email">E-mail Us</span> <br>
+                    <span>jeweloneindai@outloook.com</span>
+                </div>
+                <div class="Message">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span id="headoffice">Head Office</span> <br>
+                    <span>#46 Broad way Chennai</span>
+                </div>
+                <div class="Message">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span id="call">Call Us</span> <br>
+                    <span>04174 242052</span>
+                </div>
+            </div>
+            <div class="form">
+                <form action="https://3-project-jewelone.netlify.app/get">
+                    <h1>GET IN TOUCH TO KNOW MORE</h1>
+                    <div class="name"><input type="text" placeholder="First-Name"> <input type="text" placeholder="Last-Name"></div>
+                    <input type="email" placeholder="E-mail">
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="" placeholder="Phone Number">
+                    <input type="text" placeholder="Subject">
+                    <input type="text" placeholder="Message">
+                    <button>Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="helpcenter">
+            <h1>Jewel One</h1>
+            <a href="https://3-project-jewelone.netlify.app/#">Visit Help Center</a>
+        </div>
+        <div class="footer_ul">
+            <div class="company">
+                <span>Company</span>
+                <ul>
+                    <li><a href="https://3-project-jewelone.netlify.app/#">About us</a></li>
+                    <li><a href="https://3-project-jewelone.netlify.app/#">Offering</a></li>
+                    <li><a href="https://3-project-jewelone.netlify.app/#">New Design</a></li>
+                    <li><a href="https://3-project-jewelone.netlify.app/#">AI</a></li>
+                    <li><a href="https://3-project-jewelone.netlify.app/#">Blog</a></li>
+                    <li><a href="https://3-project-jewelone.netlify.app/#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="company">
+                <span>Products</span>
+                <ul>
+                    <li><a href="https://3-project-jewelone.netlify.app/#">Bangles</a></li>
+                    <li><a href="https://3-project-jewelone.netlify.app/#">Rings</a></li>
+                    <li><a href="https://3-project-jewelone.netlify.app/#">Platinum</a></li>
+                    <li><a href="https://3-project-jewelone.netlify.app/#">Delivery</a></li>
+                    <li><a href="https://3-project-jewelone.netlify.app/#">Silver Business</a></li>
+                    <li><a href="https://3-project-jewelone.netlify.app/#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="company">
+                <span>Global Citizenship</span>
+                <ul>
+                    <li><a href="https://3-project-jewelone.netlify.app/#">Safety</a></li>
+                    <li><a href="https://3-project-jewelone.netlify.app/#">Trusted</a></li>
+                    <li><a href="https://3-project-jewelone.netlify.app/#">Security</a></li>
+                </ul>
+            </div>
+            <div class="company">
+                <span>Conatct US</span>
+                <ul>
+                    <li><a href="https://3-project-jewelone.netlify.app/#">Jewel One </a></li>
+                    <li><a href="https://3-project-jewelone.netlify.app/#">#46 Broad Bazar Chennai</a></li>
+                    <li><a href="https://3-project-jewelone.netlify.app/#">90876 12345</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social_location">
+            <div class="social_icons">
+                <ul>
+                    <li>
+                        <a href="https://3-project-jewelone.netlify.app/#"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://3-project-jewelone.netlify.app/#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://3-project-jewelone.netlify.app/#"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://3-project-jewelone.netlify.app/#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="location">
+                <a href="https://3-project-jewelone.netlify.app/#"><i class="bx bx-world"></i> English</a>
+                <a href="https://3-project-jewelone.netlify.app/#"><i class="fa-solid fa-location-dot"></i> Chennai</a>
+
+            </div>
+        </div>
+        <div class="appstore">
+            <img src="./picture3_files/google play store.svg" alt="">
+            <img src="./picture3_files/apple store icon.svg" alt="">
+        </div>
+    </footer>
+
+
+</body></html>

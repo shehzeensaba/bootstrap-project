@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LUXURY-site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&family=Fascinate+Inline&family=Kolker+Brush&family=Spicy+Rice&display=swap');
+        body{
+          font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+        }
+       
+
+    .carousel-item img {
+      height: 30em;
+      object-fit: cover;
+      background-size: cover;
+    }
+
+    .navbar-brand {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .carousel-inner {
+      border-radius: 8px;
+    }
+
+    .carousel-caption {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-align: left;
+    }
+
+    .carousel-caption h5 {
+      font-size: 24px;
+      color: #fff;
+      font-weight: bold;
+    }
+    p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: dobe Garamond Pro;
+    font-size: 20px;
+}
+    .carousel-caption p {
+      font-size: 18px;
+      color: #fff;
+    }
+
+    h2 {
+    font-family: agaramondpro-regular;
+    font-size: 42px;
+    font-weight: normal;
+}
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1);
+    }
+
+
+
+    .card-container {
+    width: 351px;
+    height: 351px;
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 5px #000;
+    border: none;
+}
+        .card-img {
+            width: 102%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(77, 77, 77, 0.9);
+            color: #FEF5DF;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .card-container:hover .overlay {
+            opacity: 1;
+        }
+
+        .head, .price, .cart {
+            line-height: 40px;
+            margin-bottom: 10px;
+            transform: translateY(40px);
+            transition: all 0.7s;
+        }
+
+        .card-container:hover .head,
+        .card-container:hover .price,
+        .card-container:hover .cart {
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+
+        .old {
+            text-decoration: line-through;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .card-deck {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+    
+
+
+
+    .cards {
+      border: none;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+    }
+
+    .cards img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+     .cards-title {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      color: white;
+      background: rgb(0 0 0 / 31%);
+      padding: 18px;
+      font-weight: 500;
+      font-size: 17px;
+      transform: rotate(-90deg);
+      transform-origin: bottom left;
+      transition: transform 0.5s ease;
+    } 
+    .carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: -526px;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13%;
+    padding: 0;
+    /* color: #fff; */
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+     .cards:hover .cards-title {
+      transform: rotate(0deg);
+      transform-origin: bottom left;
+    } 
+
+    .container3{
+    display: grid;
+    width: 96vw;
+    grid-template-columns: repeat(12, 7.5vw);
+    grid-template-rows: repeat(16, 3vw);
+    grid-column-gap: 7px;
+    grid-row-gap: 10px;
+    margin: auto;
+   
+
+}
+.container3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#image1{
+    grid-area: 9 / 9 / span 7 / span 3;
+}
+#image2 {
+    grid-area: 2 / 9 / span 7 / span 3;
+}
+#image3 {
+    grid-area: 2 / 5 / span 14 / span 4;
+}
+#image4 {
+    grid-area: 2 / 2 / span 7 / span 3;
+}
+#image5 {
+    grid-area: 9 / 2 / span 7 / span 3;
+}
+.section__titles::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 70px;
+    background-color: red;
+}
+.section__titles {
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    margin: 50px 0;
+    position: relative;
+}
+
+.section__title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 100px;
+    background-color:red;
+}
+.section__title {
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    margin: 50px 0;
+    position: relative;
+}
+
+    .img-hover-effect {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .img-hover-effect:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    img.image__preview {
+      width: 100%;
+      height: 93%;
+    }
+
+    a.nav-link {
+      font-size:16px;
+      font-weight: 600;
+    }
+
+    .d-lg-flex.col-lg-3.justify-content-lg-end {
+      font-size:large;
+    }
+
+    a.nav-link.active.text-white {
+      border: 2px solid;
+      border-radius: 14px;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+    border-radius: 69%;
+    background-color: #494141;
+    /* background-color: info; */
+}
+
+    .carousel-control-prev {
+    left:430px;
+}
+/* .carousel-control-next {
+    right: 223px;
+} */
+    img.img-img.mobile_none.aos-init.aos-animate {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+    @media only screen and (max-width:768px) {
+      .col-md-6 {
+        flex: 0 0 auto;
+        width: 99%;
+      }
+      .carousel-control-prev {
+    left: 563px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: dobe Garamond Pro;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.container3 {
+    display: grid;
+    width: 96vw;
+    grid-template-columns: repeat(12, 7.5vw);
+    grid-template-rows: repeat(16, 3vw);
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    margin: auto;
+}
+.card-container {
+    width: 337px;
+    height: 351px;
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 5px #000;
+    border: none;
+}
+    }
+@media only screen and (min-width:375px) and (max-width:555px){
+  .col-6 {
+    flex: 0 0 auto;
+    width: 47%;
+}
+
+      .row {
+        margin-left: inherit;
+      }
+
+      img.img-img.mobile_none.aos-init.aos-animate {
+        width: 100%;
+        height: 75vh;
+        object-fit: cover;
+      }
+
+      .ms-2 {
+        margin-left: 16.6px !important;
+      }
+
+      .col-12.col-md-2.mb-3 {
+        text-align: center;
+      }
+      .container3 {
+    display: grid;
+    width: 96vw;
+    grid-template-columns: repeat(12, 6.3vw);
+    grid-template-rows: repeat(16, 5vw);
+    grid-column-gap: 7px;
+    grid-row-gap: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+}#image5 {
+    grid-area: 27 / 1 / span 10 / span 6;
+}
+#image4 {
+    grid-area: 15 / 1 / span 11 / span 6;
+}
+#image3 {
+    grid-area: 1 / 1 / span 13 / span 12;
+}
+#image1 {
+    grid-area: 15 / 7 / span 11 / span 6;
+}
+#image2 {
+    grid-area: 27 / 7 / span 10 / span 6;
+}
+.carousel-control-prev {
+    left: 257px;
+}
+    }
+
+   
+    @media only screen and (max-width:375px) {
+      .col-6 {
+    flex: 0 0 auto;
+    width: 47%;
+}
+
+      .row {
+        margin-left: inherit;
+      }
+
+      img.img-img.mobile_none.aos-init.aos-animate {
+        width: 100%;
+        height: 75vh;
+        object-fit: cover;
+      }
+
+      .ms-2 {
+        margin-left: 16.6px !important;
+      }
+
+      .col-12.col-md-2.mb-3 {
+        text-align: center;
+      }
+      .container3 {
+    display: grid;
+    width: 96vw;
+    grid-template-columns: repeat(12, 6.3vw);
+    grid-template-rows: repeat(16, 5vw);
+    grid-column-gap: 7px;
+    grid-row-gap: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+}#image5 {
+    grid-area: 27 / 1 / span 10 / span 6;
+}
+#image4 {
+    grid-area: 15 / 1 / span 11 / span 6;
+}
+#image3 {
+    grid-area: 1 / 1 / span 13 / span 12;
+}
+#image1 {
+    grid-area: 15 / 7 / span 11 / span 6;
+}
+#image2 {
+    grid-area: 27 / 7 / span 10 / span 6;
+}
+.carousel-control-prev {
+    left: 257px;
+}
+    }
+
+   
+  </style>
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-dark p-3 fixed-top" aria-label="Thirteenth navbar example">
+    <div class="container-fluid">
+      <button class="navbar-toggler text-white bg-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+        <a class="navbar-brand col-lg-3 me-0 text-white" href="#"><i class="fa-solid fa-gem"
+            style="color: #f4f5f5;font-size: larger;"></i> LUXURY</a>
+        <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index2.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-white" href="index7.html">goldsmith</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index3.html">Jewelry</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index4.html">Collections</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index5.html">Popular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index6.html">Contact</a>
+          </li>
+        </ul>
+        <div class="d-lg-flex col-lg-3 text-white justify-content-lg-end">
+          <i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;
+          <i class="fa-regular fa-heart"></i>&nbsp;&nbsp;
+          <i class="fa-regular fa-user"></i>&nbsp;&nbsp;
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="moon">
+    <img src="https://staticimg.zoya.in/Banners/mysong3/assets/images/inside_page/giflook1dt.gif"
+      class="img-img mobile_none aos-init aos-animate" alt="" data-aos="zoom-out" data-aos-duration="1200">
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Our Collections:-</h2>
+        <p>Discuss the origins of jewelry in ancient civilizations, such as Egypt, Mesopotamia, and India.his collection
+          features iconic designs that never go out of style. Think solitaire diamond rings, pearl necklaces, and gold
+          bangles.High-quality gold, platinum, and the finest gemstones like diamonds, sapphires, and emeralds.Drawing
+          inspiration from the beauty of the natural world, this collection includes floral motifs, leaf patterns, and
+          designs inspired by the elements.Nature lovers and those who appreciate organic, earthy designs.
+          Sleek, simple, and sophisticated, this collection is all about understated elegance. Clean lines and
+          minimalist designs make these pieces versatile for any occasion. White gold, rose gold, and silver.</p>
+      </div>
+      <div class="col-md-6">
+        <div id="collectionCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img3.jpg" class="d-block w-100" alt="Aeterna Collection">
+              <div class="carousel-caption">
+                <h5>Drop Necklace</h5>
+                <p>Explore</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="neck2.jpg" class="d-block w-100" alt="Nave Collection">
+              <div class="carousel-caption">
+                <h5>Tennis Necklace</h5>
+                <p>Explore</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="pic5.jpg" class="d-block w-100" alt="Bliss Collection">
+              <div class="carousel-caption">
+                <h5>Pendant Necklace</h5>
+                <p>Explore</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev make" type="button" data-bs-target="#collectionCarousel"
+            data-bs-slide="prev" >
+            <span class="carousel-control-prev-icon chevron " aria-hidden="true" ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next make" type="button" data-bs-target="#collectionCarousel"
+            data-bs-slide="next" >
+            <span class="carousel-control-next-icon chevron " aria-hidden="true" ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+  <h2 class="section__title">Discover By Category!</h2>
+
+    <div class="card-deck">
+        <!-- Card 1 -->
+        <div class="card-container">
+            <img src="https://i.pinimg.com/474x/53/63/15/53631548c493650640e8f9e4a0d7dd27.jpg" alt="Flower Embroidery 1" class="card-img">
+            <div class="overlay">
+                <div class="head">
+                    <h2> Bracelets</h2>
+                </div>
+                <div class="price">
+                    <span class="old">$699</span><br>
+                    <span class="new">$367</span>
+                </div>
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>ADD TO CART</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card-container">
+            <img src="https://i.pinimg.com/564x/07/0d/93/070d93b689d5588f21bc50432ed116c1.jpg" alt="Flower Embroidery 2" class="card-img">
+            <div class="overlay">
+                <div class="head">
+                    <h2>bangle</h2>
+                </div>
+                <div class="price">
+                    <span class="old">$799</span><br>
+                    <span class="new">$695</span>
+                </div>
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>ADD TO CART</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <img src="https://i.pinimg.com/474x/dc/fe/fc/dcfefc1f6a7f07864f7a44a945edc7c1.jpg" alt="Flower Embroidery 2" class="card-img">
+            <div class="overlay">
+                <div class="head">
+                    <h2>Necklace</h2>
+                </div>
+                <div class="price">
+                    <span class="old">$799</span><br>
+                    <span class="new">$475</span>
+                </div>
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>ADD TO CART</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <img src="https://i.pinimg.com/474x/ca/2e/0f/ca2e0f840582ffc621dc9bffa560f0f0.jpg" alt="Flower Embroidery 2" class="card-img">
+            <div class="overlay">
+                <div class="head">
+                    <h2>Earring </h2>
+                </div>
+                <div class="price">
+                    <span class="old">$799</span><br>
+                    <span class="new">$495</span>
+                </div>
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>ADD TO CART</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <img src="https://i.pinimg.com/564x/06/ce/2d/06ce2d4db981bba06a98afbdbe423c21.jpg" alt="Flower Embroidery 2" class="card-img">
+            <div class="overlay">
+                <div class="head">
+                    <h2>kireedam</h2>
+                </div>
+                <div class="price">
+                    <span class="old">$799</span><br>
+                    <span class="new">$599</span>
+                </div>
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>ADD TO CART</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card-container">
+            <img src="ring3.jpg" alt="Flower Embroidery 3" class="card-img">
+            <div class="overlay">
+                <div class="head">
+                    <h2>Ring</h2>
+                </div>
+                <div class="price">
+                    <span class="old">$899</span><br>
+                    <span class="new">$545</span>
+                </div>
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>ADD TO CART</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="container">
+    <h2 class="section__titles">Earrings!</h2>
+
+    <div class="container mt-4">
+      <div class="row">
+
+        <div class="col-md-4 mb-4 col-lg-4 col-sm-12">
+          <div class="cards">
+            <img src="https://salty.co.in/cdn/shop/files/ES13499-G_2.jpg?v=1725025274&width=360" alt="Earrings">
+            <div class="cards-title"> $4,125 </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 col-lg-4 col-sm-12">
+          <div class="cards">
+            <img src="https://salty.co.in/cdn/shop/files/ES13438-G_2.jpg?v=1725025575&width=360" alt="Earrings">
+            <div class="cards-title">$3,125</div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 col-lg-4 col-sm-12">
+          <div class="cards">
+            <img src="https://salty.co.in/cdn/shop/files/ES13409-G-PNK_6.jpg?v=1725025701&width=1000" alt="Earrings">
+            <div class="cards-title"> $8,615</div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 col-lg-4 col-sm-12">
+          <div class="cards">
+            <img src="https://i.pinimg.com/236x/6f/97/d7/6f97d7dfbb566df886d2e0e03f54711e.jpg" alt="Earrings">
+            <div class="cards-title"> $9,815</div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 col-lg-4 col-sm-12">
+          <div class="cards">
+            <img src="https://i.pinimg.com/564x/60/ec/cb/60eccb82db78853122944562440e5930.jpg" alt="Earrings">
+            <div class="cards-title"> $5,815</div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 col-lg-4 col-sm-12">
+          <div class="cards">
+            <img src="https://salty.co.in/cdn/shop/files/ES13510-G-WHT_6.jpg?v=1725025173&width=360" alt="Earrings">
+            <div class="cards-title"> $8,815</div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 col-lg-4 col-sm-12">
+          <div class="cards">
+            <img src="https://salty.co.in/cdn/shop/files/ES13977-G-BLK__20_2.jpg?v=1725027990&width=1000"
+              alt="Earrings">
+            <div class="cards-title"> $8,605</div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4  col-lg-4 col-sm-12">
+          <div class="cards">
+            <img src="https://salty.co.in/cdn/shop/files/ES13418-G-BLK_2.jpg?v=1725025636&width=1000" alt="Earrings">
+            <div class="cards-title"> $8,815</div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 mb-4  col-lg-4 col-sm-12">
+          <div class="cards">
+            <img src="https://salty.co.in/cdn/shop/files/ES13687-G-WHT_MAIN2.jpg?v=1725547657&width=1000"
+              alt="Earrings">
+            <div class="cards-title">$8,895 </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+
+        <img src="https://staticimg.zoya.in/Banners/gifting/assets/images/maingifting/giftinggem.gif"
+          class="image__preview ">
+
+      </div>
+
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-6 mb-3">
+            <img src="https://i.pinimg.com/564x/b5/19/12/b51912fcacba592c5acfd050bd66d93d.jpg" alt="Emeralds"
+              class="img-fluid img-hover-effect" style="border-radius: 5px;">
+            <p class="text-center mt-2" style="font-weight: bold;font-size: 17px;">Emeralds</p>
+          </div>
+          <div class="col-6 mb-3">
+            <img src="https://i.pinimg.com/564x/23/e6/71/23e671866571e1e9c820f3e6dce3d5d6.jpg" alt="Tanzanite"
+              class="img-fluid img-hover-effect" style="border-radius: 5px;">
+            <p class="text-center mt-2" style="font-weight: bold;font-size:17px;">Tanzanite</p>
+          </div>
+          <div class="col-6 mb-3">
+            <img src="https://i.pinimg.com/474x/4b/74/06/4b7406849a46a3f9fa07c9f0b4bd42c6.jpg" alt="Ring"
+              class="img-fluid img-hover-effect" style="border-radius: 5px;">
+            <p class="text-center mt-2" style="font-weight: bold;font-size:17px;">Ring</p>
+          </div>
+          <div class="col-6 mb-3">
+            <img src="https://i.pinimg.com/564x/5c/3a/60/5c3a601ead93828c858d10111c00483d.jpg" alt="Bracelet"
+              class="img-fluid img-hover-effect" style="border-radius: 5px;">
+            <p class="text-center mt-2" style="font-weight: bold;font-size:17px;">Earrings</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="section__title">Spotted by saba</h2>
+
+  
+  <div class="container2">
+    <div class="container3">
+        <img src="https://img.freepik.com/premium-photo/stunning-pretty-young-smiling-woman-model-photo-tips-perfect-lighting-poses-background_1298691-1249.jpg?ga=GA1.1.1639133888.1710839055&semt=ais_hybrid" alt="" id="image1">
+        <img src="https://www.zoya.in/on/demandware.static/-/Sites-Zoya-Library/default/dwc465e7e6/images/home/jahnvi_dt.jpg" alt="" id="image2">
+        <img src="https://www.zoya.in/on/demandware.static/-/Sites-Zoya-Library/default/dw1ae1b06e/images/home/Spotted_sonam_dt.png" alt="" id="image3">
+        <img src="https://assets.vogue.in/photos/65d2f9ced657c48b6e02836a/2:3/w_2560%2Cc_limit/Snapinsta.app_428601137_18427019392021763_7310705384305585532_n_1080.jpg" alt="" id="image4">
+        <img src="https://img.freepik.com/premium-photo/high-fashion-glamour-stunning-smiling-young-girl-photos-model-artist-sree-leela_1298691-3637.jpg?w=360" alt="" id="image5">
+    </div>
+</div>
+
+
+
+
+  <footer class="py-5 px-5" style="background-color:black; color:white;">
+    <div class="row">
+      <div class="col-12 col-md-2 mb-3">
+        <h4 class="text-white fw-bold">COMPANY</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="/index.html">Home</a></li>
+          <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="/index2.html">About</a></li>
+          <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="/index3.html">jewellery</a></li>
+          <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="/index5.html">Careers</a></li>
+          <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="/index7.html">team</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-2 mb-3">
+        <h4 class="text-white fw-bold">LINKS</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="info@digitalartfair.io" class="nav-link p-0 text-white">info</a></li>
+          <li class="nav-item mb-2"><a href="partnership@digitalartfair.io"
+              class="nav-link p-0 text-white">partnership</a></li>
+          <li class="nav-item mb-2"><a href="vip@digitalartfair.io" class="nav-link p-0 text-white">vip.collection</a>
+          </li>
+          <li class="nav-item mb-2"><a href="media@digitalartfair.io" class="nav-link p-0 text-white">popular
+              jewellery</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-2 mb-3" style="text-align:center">
+        <h4 class="text-white fw-bold">FOLLOW US</h4>
+        <ul class="nav flex-column" style="align-items: center;">
+          <li class="ms-2" style="font-size: 25px;"><i class="fa-brands fa-facebook"></i></li>
+          <li class="ms-3" style="font-size: 25px;"><i class="fa-brands fa-google-plus"></i></li>
+          <li class="ms-3" style="font-size: 25px;"><i class="fa-brands fa-square-instagram"></i></li>
+          <li class="ms-3" style="font-size: 25px;"><i class="fa-brands fa-square-twitter"></i></li>
+        </ul>
+      </div>
+
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h4 class="fw-bold">Subscribe to our newsletter</h4>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-secondary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="text-center  border-top">
+      <p class="my-4">© 2024 Company, Inc. All rights reserved |<span class="text-info fw-bold">@Shehzeen Saba</span>|
+      </p>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

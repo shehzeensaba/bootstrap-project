@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LUXURY-site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&family=Fascinate+Inline&family=Kolker+Brush&family=Spicy+Rice&display=swap');
+
+       
+
+        :root {
+            --orange: #DC7123;
+            --bg: #352E35;
+            --white: #F0F5FB;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+
+        }
+
+        h1,
+        h2,
+        h3 {
+       font-family: dobe Garamond Pro;  
+}
+        
+
+        h2 {
+            line-height: 34px;
+            font-size: 31px;
+           font-family: agaramondpro-regular;
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .cards__wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+        }
+
+        .cards {
+            position: relative;
+            width: 400px;
+            height: 466px;
+            background: var(--bg);
+        }
+
+        .cards::before,
+        .cards::after {
+            content: '';
+            position: absolute;
+            top: 1.25em;
+            bottom: 1.25em;
+            left: 1.25em;
+            right: 1.25em;
+            cursor: pointer;
+        }
+
+        .cards::before {
+            transform: scale(0, 1);
+            transition: transform ease-out 250ms;
+            border-top: 1px solid var(--white);
+            border-bottom: 1px solid var(--white);
+        }
+
+        .cards::after {
+            transform: scale(1, 0);
+            transition: transform ease-out 250ms;
+            border-left: 1px solid var(--white);
+            border-right: 1px solid var(--white);
+        }
+
+        .cards:hover::before {
+            transform: scale(1.05, 1);
+        }
+
+        .cards:hover::after {
+            transform: scale(1, 1.05);
+        }
+
+        .cards__image {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .cards:hover .cards__image {
+            opacity: 0.4;
+        }
+
+        .cards:hover .cards__text {
+            opacity: 1;
+        }
+
+        .cards__text {
+            position: absolute;
+            top: 53%;
+            left: 50%;
+            color: var(--white);
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity ease-out 250ms;
+            text-align: center;
+        }
+        
+        .w-100 {
+            width: 100% !important;
+            margin-bottom: 54px;
+            object-fit: cover;
+        }
+
+        .lead {
+            font-size: 16px;
+            font-weight: 300;
+            font-family: dobe Garamond Pro;
+            width: 91%;
+        }
+
+        .lh-1 {
+            line-height: 1 !important;
+            font-family: agaramondpro-regular;
+            font-size: 35px;
+        }
+
+        .col-md-7 {
+
+            margin: auto;
+            width: 37%;
+
+        }
+
+        .d-lg-flex.col-lg-3.justify-content-lg-end {
+            font-size: large;
+        }
+
+        a.nav-link {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        img.bannerimg.d-block.w-100.height-500px {
+            height: 100vh;
+        }
+
+        .auto:hover {
+            transform: scale(0.95);
+            filter: hue-rotate(286deg);
+        }
+
+        a.navbar-brand.col-lg-3.me-0.text-white {
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        a.nav-link.active.text-white {
+            border: 2px solid;
+            border-radius: 14px;
+        }
+
+        img.card-img {
+            margin-bottom: 20px;
+        }
+
+        @media only screen and (max-width:786px) {
+       
+            .col-md-7 {
+                margin: auto;
+                width: 49%;
+            }
+
+            img.bannerimg.d-block.w-100.height-500px {
+                height: 63vh;
+            }
+        }
+
+        @media only screen and (min-width:375px) and (max-width:555px) {
+            .cards__wrapper {
+            flex-wrap: wrap;
+        }
+            .col-md-7 {
+                margin: auto;
+                width: 97%;
+            }
+
+            .col-6 {
+                flex: 0 0 auto;
+                width: 44%;
+            }
+
+            img.bannerimg.d-block.w-100.height-500px {
+                height: 63vh;
+            }
+
+            .ms-2 {
+                margin-left: 16.6px !important;
+            }
+
+            .col-12.col-md-2.mb-3 {
+                text-align: center;
+            }
+        }
+        @media only screen and (max-width:876px) {
+            .cards {
+    position: relative;
+    width: 468px;
+    height: 307px;
+    background: var(--bg);
+}
+        }
+
+        @media only screen and (max-width:375px) {
+            .cards {
+            position: relative;
+            width: 400px;
+            height: 466px;
+            background: var(--bg);
+        }
+            .cards__wrapper {
+            
+            flex-wrap: wrap;
+        }
+            .col-md-7 {
+                margin: auto;
+                width: 97%;
+            }
+
+            .col-6 {
+                flex: 0 0 auto;
+                width: 44%;
+            }
+
+            img.bannerimg.d-block.w-100.height-500px {
+                height: 63vh;
+            }
+
+            .ms-2 {
+                margin-left: 16.6px !important;
+            }
+
+            .col-12.col-md-2.mb-3 {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark p-3 fixed-top" aria-label="Thirteenth navbar example">
+        <div class="container-fluid">
+            <button class="navbar-toggler text-white bg-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+                <a class="navbar-brand col-lg-3 me-0 text-white" href="#"><i class="fa-solid fa-gem"
+                        style="color: #f4f5f5;font-size: larger;"></i> LUXURY</a>
+                <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active text-white" href="index2.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index7.html">goldsmith</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index3.html">Jewelry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index4.html">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index5.html">Popular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index6.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-lg-flex col-lg-3 text-white justify-content-lg-end">
+                    <i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;
+                    <i class="fa-regular fa-heart"></i>&nbsp;&nbsp;
+                    <i class="fa-regular fa-user"></i>&nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://staticimg.zoya.in/Banners/Herbecoming/assets/images/fabrichome/Banner_d.png?impolicy=pqhigh"
+                    class=" bannerimg  d-block w-100 height-500px" alt="...">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="shop by Feature">
+        <div class="row featurette mb-5">
+            <div class="col-md-7 ">
+                <h1 class="featurette-heading fw-normal lh-1 font-family: fangsong;">Enchanting Brilliance</h1>
+                <p class="lead">
+                    An enchanting brilliance lit up her spirit, as she dreamt of a beautiful tapestry inspired by the
+                    journey of her life. Each thread handpicked, a metaphor for her dreams and desires, colored with the
+                    essence of her soul.</p>
+            </div>
+            <div class="col-md-5">
+                <video width="100%" height="100%" autoplay="" class="videoclassinn" muted="" loop="" playsinline="">
+                    <source src="video5 (2).mp4" type="video/mp4">
+                </video>
+
+            </div>
+        </div>
+
+        <div class="cards__wrapper">
+
+            <div class="cards">
+                <img class="cards__image"
+                    src="https://staticimg.zoya.in/Banners/Herbecoming/assets/images/fabrichome/producttwoslide.jpg?impolicy=pqhigh"
+                    alt="Christmas Card">
+                <div class="cards__text">
+                    <h2 class="cards__title">CHOPARD </h2>
+                    <p class="cards__body"> famous for their luxury timepieces and red-carpet pieces</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="cards">
+                <img class="cards__image"
+                    src="https://staticimg.zoya.in/Banners/Herbecoming/assets/images/fabrichome/producttwoslideone.jpg?impolicy=pqhigh"
+                    alt="Holiday Decor">
+                <div class="cards__text">
+                    <h2 class="cards__title">PIAGET</h2>
+                    <p class="cards__body">jewellery with a focus on gold and diamonds</p>
+                </div>
+            </div>
+
+
+            <div class="cards">
+                <img class="cards__image"
+                    src="https://staticimg.zoya.in/Banners/Herbecoming/assets/images/fabrichome/producttwoslidethree.jpg?impolicy=pqhigh"
+                    alt="Festive Lights">
+                <div class="cards__text">
+                    <h2 class="cards__title">PLATINUM</h2>
+                    <p class="cards__body">Platinum is one of the strongest metals used in jewellery</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row featurette mt-5" id="shop by Color">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Determined Elegance</h2>
+                <p class="lead">
+                    With unwavering determination, each pull of the shuttle symbolized the perseverance needed to create
+                    a seamless and resilient tapestry as strong as her spirit..</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <video width="100%" height="100%" autoplay="" class="videoclassinn" muted="" loop="" playsinline="">
+                    <source src="video (2).mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="padding: 50px 1px;">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="auto">
+                        <div class="card" style="border: none;">
+                            <img src="https://staticimg.zoya.in/Banners/Herbecoming/assets/images/fabrichome/productthreeslideone.jpg?impolicy=pqhigh"
+                                alt="Samave" class="card-img" style="width: 100%; height: auto; object-fit: cover;">
+                            <div class="card-img-overlay"
+                                style="display: flex; flex-direction: column; justify-content: flex-end; padding: 20px;">
+                                <h5 class="card-title" style="color: white; font-size:26px; margin-bottom: 5px;">ICONIC
+                                    COLLECTION</h5>
+                                <p style="color: white; font-size: 1rem;">Explore</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="auto">
+                        <div class="card" style="border: none;">
+                            <img src="https://staticimg.zoya.in/Banners/Herbecoming/assets/images/fabrichome/productoneslidetwo.jpg?impolicy=pqhigh"
+                                alt="Lozo D'Arte" class="card-img"
+                                style="width: 100%; height: auto; object-fit: cover;">
+                            <div class="card-img-overlay"
+                                style="display: flex; flex-direction: column; justify-content: flex-end;  padding: 20px;">
+                                <h5 class="card-title" style="color: white; font-size:26px; margin-bottom: 5px;">
+                                    EARRINGS COLLECTION</h5>
+                                <p style="color: white; font-size: 1rem;">Explore</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="auto">
+                        <div class="card" style="border: none;">
+                            <img src="https://staticimg.zoya.in/Banners/Herbecoming/assets/images/fabrichome/productthreeslide.jpg?impolicy=pqhigh"
+                                alt="Another Collection" class="card-img"
+                                style="width: 100%; height: auto; object-fit: cover;">
+                            <div class="card-img-overlay"
+                                style="display: flex; flex-direction: column; justify-content: flex-end; padding: 20px;">
+                                <h5 class="card-title" style="color: white; font-size:26px; margin-bottom: 5px;">ANOTHER
+                                    COLLECTION</h5>
+                                <p style="color: white; font-size: 1rem;">Explore</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row featurette mb-5">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Joyous Luminescence</h2>
+                <p class="lead">In the final stages, a sense of joy, swept through the weaver, echoing the freedom found
+                    in the interwoven patterns, breaking barriers of the ordinary, revealing a magnificent creation.</p>
+            </div>
+            <div class="col-md-5">
+                <video width="100%" height="100%" autoplay="" class="videoclassinn" muted="" loop="" playsinline="">
+                    <source src="video3 (2).mp4" type="video/mp4">
+                </video>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-5 px-5" style="background-color:black; color:white;">
+        <div class="row">
+            <div class="col-12 col-md-2 mb-3">
+                <h4 class="text-white fw-bold">COMPANY</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="/index.html">Home</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="/index2.html">About</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="/index3.html">jewellery</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="/index5.html">Careers</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link p-0 text-white" href="/index7.html">team</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-2 mb-3">
+                <h4 class="text-white fw-bold">LINKS</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="info@digitalartfair.io" class="nav-link p-0 text-white">info</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="partnership@digitalartfair.io"
+                            class="nav-link p-0 text-white">partnership</a></li>
+                    <li class="nav-item mb-2"><a href="vip@digitalartfair.io"
+                            class="nav-link p-0 text-white">vip.collection</a></li>
+                    <li class="nav-item mb-2"><a href="media@digitalartfair.io" class="nav-link p-0 text-white">popular
+                            jewellery</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-2 mb-3" style="text-align:center">
+                <h4 class="text-white fw-bold">FOLLOW US</h4>
+                <ul class="nav flex-column" style="align-items: center;">
+                    <li class="ms-2" style="font-size: 25px;"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="ms-3" style="font-size: 25px;"><i class="fa-brands fa-google-plus"></i></li>
+                    <li class="ms-3" style="font-size: 25px;"><i class="fa-brands fa-square-instagram"></i></li>
+                    <li class="ms-3" style="font-size: 25px;"><i class="fa-brands fa-square-twitter"></i></li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h4 class="fw-bold">Subscribe to our newsletter</h4>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-secondary" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="text-center  border-top">
+            <p class="my-4">© 2024 Company, Inc. All rights reserved |<span class="text-info fw-bold">@Shehzeen
+                    Saba</span>|</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
